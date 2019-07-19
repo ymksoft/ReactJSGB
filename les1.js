@@ -135,3 +135,39 @@ class Developer {
         console.log(this.developerID);
     }
 }
+
+
+/* 4 
+Написать цикл, который создает массив промисов, 
+внутри каждого промиса происходит обращение к ресурсу (https://jsonplaceholder.typicode.com/users/number), 
+где вместо number подставляется число от 1 до 10, в итоге должно получиться 10 промисов. 
+Следует дождаться выполнения загрузки всеми промисами и далее вывести массив загруженных данных
+*/
+
+
+const fetch = require("node-fetch");
+
+const urls = [];
+
+for( let i = 0; i < 10; i++ ) {
+    urls.push( `https://jsonplaceholder.typicode.com/users/${i}` );
+}
+
+let somedata = fetchAll(urls);
+
+async function fetchAll(urls) {
+    try {
+      let ext = await Promise.all(
+        urls.map(url => fetch(url)
+          .then(r => r.json())
+          .catch(error => ({ error, url }))
+        )
+      )
+      for (let item of ext) {
+        console.log(item)
+      } 
+    } catch (err) {
+      console.log(err)
+    }
+  } 
+
