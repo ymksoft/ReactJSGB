@@ -150,7 +150,7 @@ const fetch = require("node-fetch");
 const urls = [];
 
 for( let i = 0; i < 10; i++ ) {
-    urls.push( `https://jsonplaceholder.typicode.com/users/${i}` );
+    urls.push( `https://jsonplaceholder.typicode.com/users/${i+1}` );
 }
 
 let somedata = fetchAll(urls);
