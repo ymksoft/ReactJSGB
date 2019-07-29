@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "create-react-class": "^15.6.3",
     "jquery": "^3.4.1",
     "node-fetch": "^2.6.0",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
