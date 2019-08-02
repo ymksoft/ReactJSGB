@@ -2,7 +2,7 @@ import React from 'react';
 
 export default class Modal extends React.Component {
     render() {
-      if (this.props.isOpen === false) return null;
+      if (!this.props.isOpen) return null;
   
       return (
         <div>
