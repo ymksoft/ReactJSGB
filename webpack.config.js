@@ -4,7 +4,7 @@ const path = require('path'),
     UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-  // какой модуль собирать (app.js)
+  // какой модуль собирать ( app.js )
   entry: path.resolve(__dirname, 'src', 'app.js'),
   output: {
     // куда выводить сборку (dist)
