@@ -10,12 +10,12 @@ class Login extends React.Component {
                 <div>
                     <label>Почта или номер мобильного</label>
                     <input type="text" id="loginform-identity"  
-                        name="identity" placeholder="телефон или почта" autofocus aria-required="true"></input>
+                        name="identity" placeholder="телефон или почта" autoFocus aria-required="true"></input>
                 </div>
                 <div>
                     <label>Пароль</label>
                     <input type="password" id="loginform-password"  
-                        name="password" value="" aria-required="true" placeholder="введите пароль"></input>
+                        name="password" aria-required="true" placeholder="введите пароль"></input>
                 </div>
                 <div>
                     <button type="submit"  

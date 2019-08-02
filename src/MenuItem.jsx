@@ -15,7 +15,7 @@ MenuItem.defaultProps = {
 }
 
 MenuItem.propTypes = {
-  href: PropTypes.number.isRequired,
+  href: PropTypes.string.isRequired,
   children: PropTypes.string.isRequired
 }
 
